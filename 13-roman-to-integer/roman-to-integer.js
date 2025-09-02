@@ -20,7 +20,7 @@ var romanToInt = function(s) {
 
     for (let i = 0; i < s.length; i++) {
         // If current value < next value, subtract it
-        if (i < s.length - 1 && roman.get(s[i]) < roman.get(s[i + 1])) {
+        if ( roman.get(s[i]) < roman.get(s[i + 1])) {
             res -= roman.get(s[i]);
         } else {
             res += roman.get(s[i]);
